@@ -1,2 +1,2 @@
 # IDS
-Identity-preserving Distillation Sampling for Image Translation with Latent Diffusion Models
+Identity-preserving Distillation Sampling by Fixed-Point Iterator
