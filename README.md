@@ -24,8 +24,11 @@ pip install transformers==4.44.2
 pip install huggingface-hub==0.23.5
 pip install matplotlib
 ```
-## Inference
+## Run
 To run IDS, use a [notebook](https://github.com/shhh0620/IDS/blob/main/demo.ipynb) or run the below code.
-```python
-python run.py --model 'ids' --img_path <path/for/source.png> --prompt <source prompt> --trg_prompt <target prompt> --save_path <path/to/save/result>
+We use a single NVIDIA RTX 3090 GPU for our experiments.
 ```
+python run.py --model 'ids' --img_path <path/for/source.png> --prompt <source prompt> --trg_prompt <target prompt> --save_path <path/to/save/result> --cuda <GPU id>
+```
+## Acknowledgements
+Our code is based on [CDS](https://github.com/HyelinNAM/ContrastiveDenoisingScore.git). We thank the authors for sharing their works.
