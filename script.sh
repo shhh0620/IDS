@@ -1,9 +1,9 @@
 #!/bin/bash
 
 python run.py \
-	--model dds \
+	--model ids \
 	--img_path 'data/bike.png' \
 	--prompt 'Bicycle' \
 	--trg_prompt 'Neon BMX bicycle' \
-	--save_path save/dds \
-	--cuda 3
+	--save_path save/ids \
+	--cuda 0
