@@ -12,3 +12,20 @@ Jiwon Kang<sup>1</sup>,
 [Eunju Cha](https://scholar.google.com/citations?user=mqNGNqEAAAAJ&hl=ko)<sup>2</sup>  
 <sup>1</sup> Korea University, <sup>2</sup> Sookmyung Women's University, <sup>3</sup> KAIST
 
+![Algorithm](https://github.com/shhh0620/IDS/blob/main/assets/algorithm.png)
+## Installation
+Our implementation is conducted on Python 3.8. To install the environment, please run the following.
+```
+conda create -n ids python=3.8
+conda activate ids
+pip install torch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 --index-url https://download.pytorch.org/whl/cu121
+pip install diffusers==0.16.1
+pip install transformers==4.44.2
+pip install huggingface-hub==0.23.5
+pip install matplotlib
+```
+## Inference
+To run IDS, use a [notebook](https://github.com/shhh0620/IDS/blob/main/demo.ipynb) or run the below code.
+```python
+python run.py --model 'ids' --img_path <path/for/source.png> --prompt <source prompt> --trg_prompt <target prompt> --save_path <path/to/save/result>
+```
