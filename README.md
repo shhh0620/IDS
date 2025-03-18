@@ -30,5 +30,15 @@ We use a single NVIDIA RTX 3090 GPU for our experiments.
 ```
 python run.py --model 'ids' --img_path <path/for/source.png> --prompt <source prompt> --trg_prompt <target prompt> --save_path <path/to/save/result> --cuda <GPU id>
 ```
+## Reference
+If you find our work useful for your research, please cite our paper.
+```
+@article{kim2025identity,
+  title={Identity-preserving Distillation Sampling by Fixed-Point Iterator},
+  author={Kim, SeonHwa and Kim, Jiwon and Park, Soobin and Ahn, Donghoon and Kang, Jiwon and Kim, Seungryong and Jin, Kyong Hwan and Cha, Eunju},
+  journal={arXiv preprint arXiv:2502.19930},
+  year={2025}
+}
+```
 ## Acknowledgements
 Our code is based on [CDS](https://github.com/HyelinNAM/ContrastiveDenoisingScore.git). We thank the authors for sharing their works.
