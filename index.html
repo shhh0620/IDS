@@ -43,6 +43,10 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
 <body>
 
@@ -133,20 +137,21 @@
 </section>
 
 <!-- Teaser video-->
-<!--here<section class="hero teaser">
+<section class="hero teaser">
   <div class="container is-max-desktop">
+    <h2 class="title is-3">Accumulation error in DDS</h2>
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%"> here-->
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-<!--here        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/problem_of_previous_re.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+         In DDS, misalignment between random noise \( \epsilon \) and estimated score \( \epsilon_{\phi}^{\text{src}} \) causes error. This error is accumulated during optimization process, resulting in undesired output.
       </h2>
     </div>
   </div>
-</section> here-->
+</section>
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
